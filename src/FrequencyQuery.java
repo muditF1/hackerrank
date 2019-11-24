@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.joining;
 
 public class FrequencyQuery {
 
-  static List<Integer> freqQuery(int[][] queries) {
+  private static List<Integer> freqQuery(int[][] queries) {
     List<Integer> status = new ArrayList<>();
     HashMap<Integer, Integer> map1 = new HashMap<>();
     int notify = 0;
@@ -48,8 +48,6 @@ public class FrequencyQuery {
         }
       }
     }
-
-    System.out.println(notify);
     return status;
   }
 
